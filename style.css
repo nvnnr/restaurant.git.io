@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: green;
+    padding: 20px;
+}
+nav{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:#ffffff;
+    transition: 0.2s ease-in;
+    font-size: 25px;
+    border-radius: 25px;
+}
+nav ul a:hover{
+    background-color: rgb(255, 116, 204);
+    color: rgb(0, 0, 0);
+}
+.in{
+    font-size: 55px;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid: column gap 20px; 
+    grid-row-gap:30px;
+}
+.item img{
+    width:98%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 25px;
+  
+}
+.item img:hover{
+    transform: scale(1.2);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:20px ;
+    display:block ;
+    margin: 0 auto;
+    transition: 0.2s ease-in;
+    letter-spacing: 3px;
+    transition: 0.2s all;
+}
+.item button:hover{
+    background-color: green;
+    color: white; 
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
